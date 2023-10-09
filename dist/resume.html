@@ -16,13 +16,46 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
+        <style>
+             svg {
+                
+                width: 100%; height: 100%;
+            }
+            svg text {
+                animation: stroke 5s infinite alternate;
+                stroke-width: 2;
+                stroke: #d753b6;
+                font-size:33px;
+            }
+            @keyframes stroke {
+                0%   {
+                    fill: rgba(72,138,204,0); stroke: #d753b6;
+                    stroke-dashoffset: 25%; stroke-dasharray: 0 50%; stroke-width: 2;
+                }
+                70%  {fill: rgba(72,138,204,0); stroke: #d753b6; }
+                80%  {fill: rgba(72,138,204,0); stroke: #d753b6; stroke-width: 3; }
+                100% {
+                    fill: #d753b6; stroke: rgba(54,95,160,0);
+                    stroke-dashoffset: -25%; stroke-dasharray: 50% 0; stroke-width: 0;
+                }
+            }
+        </style>
     </head>
     <body class="d-flex flex-column h-100 bg-light">
         <main class="flex-shrink-0">
             <!-- Navigation-->
-            <nav class="navbar navbar-expand-lg navbar-light bg-white py-3">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light py-3">
                 <div class="container px-5">
-                    <a class="navbar-brand" href="index.html"><span class="fw-bolder text-primary">Start Bootstrap</span></a>
+                    <a class="navbar-brand" href="index.html"><span class="fw-bolder text-primary">
+                        <div class="wrapper">
+                                <svg>
+                                    <text x="50%" y="50%" dy=".35em" text-anchor="middle">
+                                        Johnny Felisbino
+                                    </text>
+                                </svg>
+                            </div>
+                    </span>
+                </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav ms-auto mb-2 mb-lg-0 small fw-bolder">
@@ -37,19 +70,19 @@
             <!-- Page Content-->
             <div class="container px-5 my-5">
                 <div class="text-center mb-5">
-                    <h1 class="display-5 fw-bolder mb-0"><span class="text-gradient d-inline">Resume</span></h1>
+                    <h1 class="display-5 fw-bolder mb-0"><span class="text-gradient d-inline">Resumo</span></h1>
                 </div>
                 <div class="row gx-5 justify-content-center">
                     <div class="col-lg-11 col-xl-9 col-xxl-8">
                         <!-- Experience Section-->
                         <section>
                             <div class="d-flex align-items-center justify-content-between mb-4">
-                                <h2 class="text-primary fw-bolder mb-0">Experience</h2>
+                                <h2 class="text-primary fw-bolder mb-0">Experiência</h2>
                                 <!-- Download resume button-->
                                 <!-- Note: Set the link href target to a PDF file within your project-->
                                 <a class="btn btn-primary px-4 py-3" href="#!">
                                     <div class="d-inline-block bi bi-download me-2"></div>
-                                    Download Resume
+                                    Download Resumo
                                 </a>
                             </div>
                             <!-- Experience Card 1-->
@@ -58,13 +91,26 @@
                                     <div class="row align-items-center gx-5">
                                         <div class="col text-center text-lg-start mb-4 mb-lg-0">
                                             <div class="bg-light p-4 rounded-4">
-                                                <div class="text-primary fw-bolder mb-2">2019 - Present</div>
-                                                <div class="small fw-bolder">Web Developer</div>
-                                                <div class="small text-muted">Stark Industries</div>
-                                                <div class="small text-muted">Los Angeles, CA</div>
+                                                <div class="text-primary fw-bolder mb-2">2022 - Atualmente</div>
+                                                <div class="small fw-bolder">Desenvolvedor Web</div>
+                                                <div class="small text-muted">Zarpo Viagens</div>
+                                                <div class="small text-muted">São Paulo, SP</div>
                                             </div>
                                         </div>
-                                        <div class="col-lg-8"><div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus laudantium, voluptatem quis repellendus eaque sit animi illo ipsam amet officiis corporis sed aliquam non voluptate corrupti excepturi maxime porro fuga.</div></div>
+                                        <div class="col-lg-8"><div> Nos últimos 18 meses, mergulhei de cabeça em projetos cruciais que impulsionaram a geração de receita na Zarpo Viagens. Meu foco principal foi o nosso ecossistema de e-commerce de viagens, com um destaque especial na venda de hotéis de alto padrão, elevando a qualidade do mercado a um novo patamar.
+
+                                             E-commerce de Hotéis de Alto Padrão:
+                                            
+                                            Desempenhei um papel de desenvolvedor full stack na plataforma de e-commerce, que foi construída no Magento 2. Esta plataforma se destacou pela excelência na oferta de hotéis de luxo, proporcionando uma experiência de alta qualidade para nossos clientes. Trabalhando em estreita colaboração com a equipe, desenvolvemos uma API interna que permitiu o acesso a informações de hotéis e disponibilidade de datas com eficiência.
+                                            
+                                             Contribuições no Desenvolvimento da API com Laravel:
+                                            
+                                            No projeto de desenvolvimento da API com Laravel para a Zarpo Viagens, tive o prazer de trabalhar em um ambiente altamente colaborativo. Este projeto foi uma oportunidade valiosa para aprimorar minhas habilidades no Laravel, e minha dedicação resultou em entregas bem-sucedidas e no fortalecimento de minha experiência na tecnologia.
+                                            
+                                             Desenvolvimento Full Stack e Vue.js:
+                                            
+                                            Como desenvolvedor full stack, tive a oportunidade de aprimorar minhas habilidades em PHP e expandir meus conhecimentos em Vue.js. Esta experiência fortaleceu meu vínculo com a tecnologia e a trouxe para meus projetos freelancers, promovendo a inovação em todos os lugares onde atuo.
+                                            Esses projetos não apenas aprimoraram minhas habilidades técnicas, mas também me permitiram colaborar em uma equipe dedicada e compartilhar conhecimento com colegas e freelancers. Estou empolgado em continuar trazendo minha paixão e expertise para futuros desafios tecnológicos.</div></div>
                                     </div>
                                 </div>
                             </div>
@@ -74,38 +120,80 @@
                                     <div class="row align-items-center gx-5">
                                         <div class="col text-center text-lg-start mb-4 mb-lg-0">
                                             <div class="bg-light p-4 rounded-4">
-                                                <div class="text-primary fw-bolder mb-2">2017 - 2019</div>
-                                                <div class="small fw-bolder">SEM Specialist</div>
-                                                <div class="small text-muted">Wayne Enterprises</div>
-                                                <div class="small text-muted">Gotham City, NY</div>
+                                                <div class="text-primary fw-bolder mb-2">2021 - 2022</div>
+                                                <div class="small fw-bolder">Estagiário de T.I</div>
+                                                <div class="small text-muted">Zarpo Viagens</div>
+                                                <div class="small text-muted">São Paulo, SP</div>
                                             </div>
                                         </div>
-                                        <div class="col-lg-8"><div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus laudantium, voluptatem quis repellendus eaque sit animi illo ipsam amet officiis corporis sed aliquam non voluptate corrupti excepturi maxime porro fuga.</div></div>
+                                        <div class="col-lg-8"><div> Durante um ano de dedicação à Zarpo, tive a honra de participar da revolução tecnológica da organização. Como desenvolvedor PHP especializado em Laravel, minha missão foi aprimorar a infraestrutura e otimizar os processos de suporte para impulsionar a eficiência e a eficácia em toda a empresa.
+
+                                             Transformação da Infraestrutura e Suporte:
+                                            
+                                            Como líder do projeto, concebi e implementei uma solução de ponta a ponta baseada em Laravel que atendeu às necessidades de todos os departamentos da empresa. Este sistema centralizado permitiu solicitações de suporte para consertos, reembolsos financeiros, pedidos de férias e muito mais, tudo a partir de uma única plataforma intuitiva.
+                                            
+                                             Dashboard de Controle Estratégico:
+                                            
+                                            Desenvolvi um poderoso painel de controle que forneceu insights valiosos em tempo real sobre os recursos disponíveis, status de chamados e informações de inventário de computadores. Essa ferramenta permitiu à empresa tomar decisões informadas e otimizar os recursos de forma eficaz.
+                                            
+                                            Inventário de Computadores Simplificado:
+                                            
+                                            Simplifiquei a gestão de ativos de TI ao criar um sistema de inventário abrangente que automatizou o rastreamento e a alocação de recursos. Isso eliminou processos manuais demorados e reduziu erros, resultando em maior eficiência e economia de recursos.
+                                            
+                                             A Transformação Além da Tecnologia:
+                                            
+                                            Como membro da equipe, meu compromisso com a organização se refletiu na abordagem "sensação de dono". Trabalhei em estreita colaboração com colegas de todos os departamentos para entender suas necessidades e garantir que nossos sistemas estivessem alinhados com a missão e os objetivos da empresa.</div></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card shadow border-0 rounded-4 mb-5">
+                                <div class="card-body p-5">
+                                    <div class="row align-items-center gx-5">
+                                        <div class="col text-center text-lg-start mb-4 mb-lg-0">
+                                            <div class="bg-light p-4 rounded-4">
+                                                <div class="text-primary fw-bolder mb-2">2021 - Atualmente</div>
+                                                <div class="small fw-bolder">Freelancer</div>
+                                                <div class="small text-muted">Freelance</div>
+                                                <div class="small text-muted">São Paulo, SP</div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-8"><div>  Como freelancer, minha missão é entregar projetos com excelência, sempre buscando a melhor tecnologia para atender às necessidades específicas de meus clientes. Minha abordagem é centrada na criação de soluções personalizadas que elevam os negócios de meus clientes a novos patamares.
+
+                                             Referência do Último Projeto - E-commerce Completo em Laravel:
+                                            
+                                            Recentemente, enfrentei um dos meus maiores desafios como freelancer: desenvolver um e-commerce completo em Laravel. Este projeto envolveu a implementação de recursos de promoções por período, a criação de cupons de desconto, automação do processo de compra de frete após a confirmação da reserva de um produto com a API da Melhor Envios e a integração de toda a estrutura de pagamento com a API do PagSeguro.
+                                            Desenvolvimento Full Stack e Mais:
+                                            
+                                            Como desenvolvedor full stack, assumi a responsabilidade desde a criação do mockup no Figma até a conclusão e hospedagem do site online. Essa jornada me permitiu explorar uma ampla gama de tecnologias e habilidades, além de entregar um e-commerce robusto e eficiente para o cliente.
+                                            Meu GitHub como Portfólio:
+                                            
+                                            Para obter mais informações sobre os projetos que tenho trabalhado como freelancer, convido você a explorar meu GitHub, onde compartilho detalhes sobre cada projeto que empreendo. Lá, você encontrará um registro detalhado de meu compromisso com a inovação e a qualidade.
+                                            Estou sempre empolgado em colaborar em novos desafios como freelancer e aplicar meu conhecimento e experiência para impulsionar o sucesso de meus clientes. Se você está buscando uma parceria comprometida com a excelência tecnológica, estou aqui para ajudar!</div></div>
                                     </div>
                                 </div>
                             </div>
                         </section>
                         <!-- Education Section-->
                         <section>
-                            <h2 class="text-secondary fw-bolder mb-4">Education</h2>
+                            <h2 class="text-secondary fw-bolder mb-4">Formação</h2>
                             <!-- Education Card 1-->
                             <div class="card shadow border-0 rounded-4 mb-5">
                                 <div class="card-body p-5">
                                     <div class="row align-items-center gx-5">
                                         <div class="col text-center text-lg-start mb-4 mb-lg-0">
                                             <div class="bg-light p-4 rounded-4">
-                                                <div class="text-secondary fw-bolder mb-2">2015 - 2017</div>
+                                                <div class="text-secondary fw-bolder mb-2">2020 - 2022</div>
                                                 <div class="mb-2">
-                                                    <div class="small fw-bolder">Barnett College</div>
-                                                    <div class="small text-muted">Fairfield, NY</div>
+                                                    <div class="small fw-bolder">Uninove</div>
+                                                    <div class="small text-muted">São Paulo, SP</div>
                                                 </div>
                                                 <div class="fst-italic">
-                                                    <div class="small text-muted">Master's</div>
-                                                    <div class="small text-muted">Web Development</div>
+                                                    <div class="small text-muted">Analise e desenvolvimento de sistemas</div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-lg-8"><div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus laudantium, voluptatem quis repellendus eaque sit animi illo ipsam amet officiis corporis sed aliquam non voluptate corrupti excepturi maxime porro fuga.</div></div>
+                                        <div class="col-lg-8"><div>Formado em Análise e Desenvolvimento de Sistemas em 2022, com uma sólida base em tecnologia adquirida ao longo de sete anos de estudos pré-faculdade. Minha experiência acadêmica em 2020 permitiu aprofundar habilidades, envolver-se em projetos significativos e construir conexões valiosas na indústria. Agora, estou preparado para contribuir com soluções tecnológicas e inovadoras.</div></div>
                                     </div>
                                 </div>
                             </div>
@@ -115,18 +203,17 @@
                                     <div class="row align-items-center gx-5">
                                         <div class="col text-center text-lg-start mb-4 mb-lg-0">
                                             <div class="bg-light p-4 rounded-4">
-                                                <div class="text-secondary fw-bolder mb-2">2011 - 2015</div>
+                                                <div class="text-secondary fw-bolder mb-2">2018 - 2019</div>
                                                 <div class="mb-2">
-                                                    <div class="small fw-bolder">ULA</div>
-                                                    <div class="small text-muted">Los Angeles, CA</div>
+                                                    <div class="small fw-bolder">IMPACTA</div>
+                                                    <div class="small text-muted">São Paulo, SP</div>
                                                 </div>
                                                 <div class="fst-italic">
-                                                    <div class="small text-muted">Undergraduate</div>
-                                                    <div class="small text-muted">Computer Science</div>
+                                                    <div class="small text-muted">Técnico</div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-lg-8"><div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus laudantium, voluptatem quis repellendus eaque sit animi illo ipsam amet officiis corporis sed aliquam non voluptate corrupti excepturi maxime porro fuga.</div></div>
+                                        <div class="col-lg-8"><div>Participei de um curso de Desenvolvimento Web na Impacta de 2018 a 2019, aprimorando ainda mais meus conhecimentos tecnológicos. Essa experiência fortaleceu minha base antes de ingressar na faculdade, preparando-me de forma sólida para os desafios do mercado de trabalho.</div></div>
                                     </div>
                                 </div>
                             </div>
@@ -142,24 +229,24 @@
                                     <div class="mb-5">
                                         <div class="d-flex align-items-center mb-4">
                                             <div class="feature bg-primary bg-gradient-primary-to-secondary text-white rounded-3 me-3"><i class="bi bi-tools"></i></div>
-                                            <h3 class="fw-bolder mb-0"><span class="text-gradient d-inline">Professional Skills</span></h3>
+                                            <h3 class="fw-bolder mb-0"><span class="text-gradient d-inline">Habilidades profissionais</span></h3>
                                         </div>
                                         <div class="row row-cols-1 row-cols-md-3 mb-4">
-                                            <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">SEO/SEM Marketing</div></div>
-                                            <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Statistical Analysis</div></div>
-                                            <div class="col"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Web Development</div></div>
+                                            <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Comunicação clara</div></div>
+                                            <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Scrum / Kanban</div></div>
+                                            <div class="col"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Criativo</div></div>
                                         </div>
                                         <div class="row row-cols-1 row-cols-md-3">
-                                            <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Network Security</div></div>
-                                            <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Adobe Software Suite</div></div>
-                                            <div class="col"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">User Interface Design</div></div>
+                                            <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Trabalho em equipe</div></div>
+                                            <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Raciocínio lógico</div></div>
+                                            <div class="col"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Design da interface do usuário</div></div>
                                         </div>
                                     </div>
                                     <!-- Languages list-->
                                     <div class="mb-0">
                                         <div class="d-flex align-items-center mb-4">
                                             <div class="feature bg-primary bg-gradient-primary-to-secondary text-white rounded-3 me-3"><i class="bi bi-code-slash"></i></div>
-                                            <h3 class="fw-bolder mb-0"><span class="text-gradient d-inline">Languages</span></h3>
+                                            <h3 class="fw-bolder mb-0"><span class="text-gradient d-inline">Habilidades técnicas</span></h3>
                                         </div>
                                         <div class="row row-cols-1 row-cols-md-3 mb-4">
                                             <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">HTML</div></div>
@@ -168,8 +255,23 @@
                                         </div>
                                         <div class="row row-cols-1 row-cols-md-3">
                                             <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Python</div></div>
-                                            <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Ruby</div></div>
-                                            <div class="col"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Node.js</div></div>
+                                            <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Django</div></div>
+                                            <div class="col"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">PHP</div></div>
+                                        </div>
+                                        <div class="row row-cols-1 row-cols-md-3 mt-3">
+                                            <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Laravel</div></div>
+                                            <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">MySQL</div></div>
+                                            <div class="col"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Docker</div></div>
+                                        </div>
+                                        <div class="row row-cols-1 row-cols-md-3 mt-3">
+                                            <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Git</div></div>
+                                            <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Ubuntu</div></div>
+                                            <div class="col"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Orientação a objetos</div></div>
+                                        </div>
+                                        <div class="row row-cols-1 row-cols-md-3 mt-3">
+                                            <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Solid</div></div>
+                                            <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Design pattern</div></div>
+                                            <div class="col"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Vue.js</div></div>
                                         </div>
                                     </div>
                                 </div>
@@ -183,7 +285,7 @@
         <footer class="bg-white py-4 mt-auto">
             <div class="container px-5">
                 <div class="row align-items-center justify-content-between flex-column flex-sm-row">
-                    <div class="col-auto"><div class="small m-0">Copyright &copy; Your Website 2023</div></div>
+                    <div class="col-auto"><div class="small m-0">Copyright &copy; Johnny Almeida 2023</div></div>
                     <div class="col-auto">
                         <a class="small" href="#!">Privacy</a>
                         <span class="mx-1">&middot;</span>

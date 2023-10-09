@@ -16,13 +16,47 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
+        <style>
+            svg {
+                
+                width: 100%; height: 100%;
+            }
+            svg text {
+                animation: stroke 5s infinite alternate;
+                stroke-width: 2;
+                stroke: #d753b6;
+                font-size:33px;
+            }
+            @keyframes stroke {
+                0%   {
+                    fill: rgba(72,138,204,0); stroke: #d753b6;
+                    stroke-dashoffset: 25%; stroke-dasharray: 0 50%; stroke-width: 2;
+                }
+                70%  {fill: rgba(72,138,204,0); stroke: #d753b6; }
+                80%  {fill: rgba(72,138,204,0); stroke: #d753b6; stroke-width: 3; }
+                100% {
+                    fill: #d753b6; stroke: rgba(54,95,160,0);
+                    stroke-dashoffset: -25%; stroke-dasharray: 50% 0; stroke-width: 0;
+                }
+            }
+        </style>
     </head>
     <body class="d-flex flex-column h-100 bg-light">
         <main class="flex-shrink-0">
             <!-- Navigation-->
-            <nav class="navbar navbar-expand-lg navbar-light bg-white py-3">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light py-3">
                 <div class="container px-5">
-                    <a class="navbar-brand" href="index.html"><span class="fw-bolder text-primary">Start Bootstrap</span></a>
+                    <a class="navbar-brand" href="index.html">
+                        <span class="fw-bolder text-primary">
+                            <div class="wrapper">
+                                <svg>
+                                    <text x="50%" y="50%" dy=".35em" text-anchor="middle">
+                                        Johnny Felisbino
+                                    </text>
+                                </svg>
+                            </div>
+                        </span>
+                    </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav ms-auto mb-2 mb-lg-0 small fw-bolder">
@@ -38,32 +72,26 @@
             <section class="py-5">
                 <div class="container px-5 mb-5">
                     <div class="text-center mb-5">
-                        <h1 class="display-5 fw-bolder mb-0"><span class="text-gradient d-inline">Projects</span></h1>
+                        <h1 class="display-5 fw-bolder mb-0"><span class="text-gradient d-inline">Projetos</span></h1>
                     </div>
                     <div class="row gx-5 justify-content-center">
                         <div class="col-lg-11 col-xl-9 col-xxl-8">
                             <!-- Project Card 1-->
-                            <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
-                                <div class="card-body p-0">
-                                    <div class="d-flex align-items-center">
-                                        <div class="p-5">
-                                            <h2 class="fw-bolder">Project Name 1</h2>
-                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius at enim eum illum aperiam placeat esse? Mollitia omnis minima saepe recusandae libero, iste ad asperiores! Explicabo commodi quo itaque! Ipsam!</p>
-                                        </div>
-                                        <img class="img-fluid" src="https://dummyimage.com/300x400/343a40/6c757d" alt="..." />
-                                    </div>
+                            <div class="card mb-3 shadow-lg p-3 mb-5 bg-body-tertiary rounded-5">
+                                <img src="assets/Walmeida.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                  <h5 class="card-title">Ecommerce - Laravel + JavaScript + Bootstrap MDB</h5>
+                                  <p class="card-text">Projeto E-commerce Laravel-Javascript: Um sistema completo com carrinho de compras, cálculo de frete, exportação/importação de produtos, disparo de newsletters, aplicação de cupons e muito mais. Tudo documentado para fácil implementação e uso</p>
+                                  <button class="btn btn-outline-dark btn-lg px-5 py-3 fs-6 fw-bolder mt-2 mb-3" data-bs-toggle="modal" data-bs-target="#exampleModal">Ver mais sobre...</button>
                                 </div>
-                            </div>
+                              </div>
                             <!-- Project Card 2-->
-                            <div class="card overflow-hidden shadow rounded-4 border-0">
-                                <div class="card-body p-0">
-                                    <div class="d-flex align-items-center">
-                                        <div class="p-5">
-                                            <h2 class="fw-bolder">Project Name 2</h2>
-                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius at enim eum illum aperiam placeat esse? Mollitia omnis minima saepe recusandae libero, iste ad asperiores! Explicabo commodi quo itaque! Ipsam!</p>
-                                        </div>
-                                        <img class="img-fluid" src="https://dummyimage.com/300x400/343a40/6c757d" alt="..." />
-                                    </div>
+                            <div class="card mb-3 shadow-lg p-3 mb-5 bg-body-tertiary rounded-5">
+                                <img src="assets/Django.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                  <h5 class="card-title">Blog - Django + JavaScript + API</h5>
+                                  <p class="card-text">Projeto de Blog de Notícias Ágil e Simples em Django: Desenvolvi um blog de notícias eficiente que utiliza a API da newsapi.org. Oferece uma maneira rápida e fácil de acessar e compartilhar as notícias mais recentes, mantendo a simplicidade e a velocidade como prioridade.</p>
+                                  <button class="btn btn-outline-dark btn-lg px-5 py-3 fs-6 fw-bolder mt-2 mb-3" data-bs-toggle="modal" data-bs-target="#exampleModal2">Ver mais sobre...</button>
                                 </div>
                             </div>
                         </div>
@@ -74,8 +102,8 @@
             <section class="py-5 bg-gradient-primary-to-secondary text-white">
                 <div class="container px-5 my-5">
                     <div class="text-center">
-                        <h2 class="display-4 fw-bolder mb-4">Let's build something together</h2>
-                        <a class="btn btn-outline-light btn-lg px-5 py-3 fs-6 fw-bolder" href="contact.html">Contact me</a>
+                        <h2 class="display-4 fw-bolder mb-4">Vamos construir algo juntos contate-me</h2>
+                        <a class="btn btn-outline-light btn-lg px-5 py-3 fs-6 fw-bolder" href="contact.html">Contate-me</a>
                     </div>
                 </div>
             </section>
@@ -84,7 +112,7 @@
         <footer class="bg-white py-4 mt-auto">
             <div class="container px-5">
                 <div class="row align-items-center justify-content-between flex-column flex-sm-row">
-                    <div class="col-auto"><div class="small m-0">Copyright &copy; Your Website 2023</div></div>
+                    <div class="col-auto"><div class="small m-0">Copyright &copy; Johnny Felisbino 2023</div></div>
                     <div class="col-auto">
                         <a class="small" href="#!">Privacy</a>
                         <span class="mx-1">&middot;</span>
@@ -95,6 +123,83 @@
                 </div>
             </div>
         </footer>
+                <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Ecommerce</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div id="carouselExample" class="carousel slide">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="assets/image1.png" class="d-block w-100" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="assets/image4.png" class="d-block w-100" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="assets/image3.png" class="d-block w-100" alt="...">
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn" data-bs-dismiss="modal">Fechar</button>
+                <a href="https://github.com/johnnyalmd/ecommerce" target="_blank" class="btn btn-primary">Ver código do projeto...</a>
+                </div>
+            </div>
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Blog Django</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div id="carouselExample" class="carousel slide">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                            <img src="assets/image10.png" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                            <img src="assets/image4.png" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                            <img src="assets/image12.png" class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                        </div>
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn" data-bs-dismiss="modal">Fechar</button>
+                <a href="https://github.com/johnnyalmd/Blog-Django" target="_blank" class="btn btn-primary">Ver código do projeto...</a>
+                </div>
+            </div>
+            </div>
+        </div>
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
